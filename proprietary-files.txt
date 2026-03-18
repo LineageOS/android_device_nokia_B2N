@@ -6,6 +6,7 @@
 
 # Audio (Configs)
 vendor/etc/audio_platform_info_b2n.xml:vendor/etc/audio_platform_info.xml;TRYSRCFIRST
+vendor/etc/audio_policy_volumes.xml
 vendor/etc/mixer_paths_b2n.xml:vendor/etc/mixer_paths.xml;TRYSRCFIRST
 
 # ACDB loader
