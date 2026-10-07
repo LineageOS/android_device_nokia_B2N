@@ -16,10 +16,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/nokia/B2N/B2N-vendor.mk)
 
-# Audio
-PRODUCT_PACKAGES += \
-    audio.primary.sdm660
-
 # Set Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 27
 
