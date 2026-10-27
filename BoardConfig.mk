@@ -19,6 +19,10 @@ DEVICE_PATH := device/nokia/B2N
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 
+# Partitions
+BOARD_SUPER_PARTITION_SYSTEM_DEVICE_SIZE := 3221225472
+BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 1073741824
+
 # Inherit from nokia sdm660-common
 -include device/nokia/sdm660-common/BoardConfigCommon.mk
 
@@ -37,10 +41,6 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/nokia/B2N.config
-
-# Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
